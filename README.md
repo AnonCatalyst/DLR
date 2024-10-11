@@ -12,7 +12,7 @@ The DLR (Dead Link Remover) is a Python script designed to efficiently manage an
 
 ### Usage Instructions:
 
-1. Ensure the `requests` library is installed (`pip install requests`).
+1. Ensure the `requests` library is installed (`pip install requests --break-system-packages`).
 2. Prepare a text file containing your list of URLs (one URL per line).
 3. Run the DLR script and follow the prompts to validate your links.
 4. Review the output file for the list of live URLs.
