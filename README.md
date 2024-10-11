@@ -1,20 +1,21 @@
 ### DLR (Dead Link Remover)
 
-The DLR (Dead Link Remover) is a Python script designed to efficiently manage and validate a list of URLs contained in a text file. This tool automates the process of checking each link's status, ensuring that only live URLs (those responding with an HTTP status code of 200) are retained while dead links are removed.
+The DLR (Dead Link Remover) is a comprehensive Python script designed to manage and validate a list of URLs in a text file. This tool automates the process of removing duplicate links, checking the status of each remaining URL, and ensuring that only live links (those responding with an HTTP status code of 200) are retained.
 
 ### Features:
 
-- **User-Friendly Input Management**: Prompts the user for an input file name, defaulting to `input_links.txt`. If the specified file does not exist, it will continue to request a valid filename until one is provided.
-- **Batch Processing**: Links are processed in manageable batches, allowing for efficient network usage and reducing the risk of overwhelming servers.
-- **Real-Time Status Checking**: Each URL is checked for its HTTP status, and the script reports whether each link is alive or dead as it processes them.
-- **Automatic Dead Link Removal**: Dead links are automatically filtered out and not included in the output file.
-- **Output Generation**: The script generates an output file (`alive_links.txt`) containing only the live URLs, making it easy to access and organize your valid links.
+- **Duplicate Link Removal**: Automatically identifies and removes duplicate URLs from the input file before checking their status.
+- **User-Friendly Input Management**: Prompts the user for an input file name, defaulting to `input_links.txt`. If the specified file does not exist, it continues to request a valid filename until one is provided.
+- **Batch Processing**: Checks links in manageable batches, optimizing network usage and minimizing server load.
+- **Real-Time Status Checking**: Validates each URL's status, providing immediate feedback on whether a link is alive or dead during processing.
+- **Automatic Dead Link Removal**: Filters out dead links and retains only the live ones in the output file.
+- **Output Generation**: Generates an output file (`alive_links.txt`) containing only the live URLs for easy access and organization.
 
 ### Usage Instructions:
 
 1. Ensure the `requests` library is installed (`pip install requests --break-system-packages`).
-2. Prepare a text file containing your list of URLs (one URL per line).
+2. Prepare a text file with your list of URLs (one URL per line), including duplicates.
 3. Run the DLR script and follow the prompts to validate your links.
 4. Review the output file for the list of live URLs.
 
-DLR is perfect for anyone looking to maintain a clean and functional list of links, enhancing organization and accessibility. Whether you're managing a personal project, a website, or simply curating resources, DLR provides a straightforward solution for link management.
+DLR is ideal for anyone looking to maintain a clean, organized list of links, whether for personal projects, websites, or resource curation. It streamlines link management by combining duplicate removal with live link validation, providing a straightforward solution for effective link organization.
